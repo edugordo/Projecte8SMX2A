@@ -1,91 +1,108 @@
-# Afegir Linux a Active Directory
-## SMX 2A | Edu Gordo Cebrià
+# Afegir Linux a Active Directory  
+## [Eduard Gordo Cebria](mailto:eduard.gordo@mataro.epiaedu.cat)
+
+![image1](IMG/1.png)
+
+Creem els usuaris de linux per la nostra màquina Zorin OS i afegim un grup de seguretat, on haurem de posar els usuaris que vulguem que estiguin dintre per aplicar permisos i treurels a tots els usuaris que és trobin dons del grup de seguretat
 
 ---
 
-Creem els usuaris de Linux per la nostra màquina **Zorin OS** i afegim un **grup de seguretat**, on posarem els usuaris que vulguem que en formin part per aplicar permisos. La resta d’usuaris que no hagin de tenir permisos quedaran fora d’aquest grup.
+![image2](IMG/2.png)
 
-Comprovem la IP de l’adaptador 0 del servidor.
-
-## Configuració de xarxa
-
-Assignem a IPv4 de la màquina Zorin el **DNS del servidor**, apliquem els canvis i continuem.
-
-Comprovem fent `ping` tant al servidor com al domini que la connexió funciona correctament.
-
-## Instal·lació i unió al domini
-
-Instal·lem els paquets necessaris d’**Active Directory** per a Zorin.
-
-Canviem el **hostname** de la màquina i li posem el domini del servidor.
-
-Amb la comanda:
-
-```bash
-realm discover
-```
-
-comprovem que la màquina troba correctament el domini i fa la connexió amb el servidor.
-
-Seguidament, amb la comanda:
-
-```bash
-realm join
-```
-
-unim el dispositiu al domini. Si ens deixa continuar sense problemes, vol dir que la unió al domini s’ha fet correctament.
-
-Un cop completats aquests passos, a la carpeta **Computers** de l’Active Directory ja apareix el nou dispositiu.
-
-## Configuració de l’usuari
-
-Afegim la configuració perquè, quan un usuari de l’Active Directory iniciï sessió al client Zorin per primer cop, se li creï automàticament la **carpeta personal**.
-
-Seguidament iniciem sessió amb l’usuari que hem creat dins del domini.
-
-En introduir la contrasenya, apareixerà el missatge:
-
-```
-creando directorio /home/...
-```
-
-i es crearà la carpeta personal de l’usuari gràcies a la configuració prèvia.
-
-Si executem:
-
-```bash
-id
-```
-
-podem veure que l’usuari pertany correctament al domini.
-
-## Permisos i sudo
-
-Tornem a iniciar sessió amb l’usuari administrador de la màquina i creem el fitxer de **sudoers**.
-
-Afegim en aquest fitxer el grup d’usuaris de Linux que pertanyen al grup del domini.
-
-En tornar a iniciar sessió, comprovem que l’usuari es converteix en administrador i pot executar:
-
-```bash
-sudo su
-```
-
-Podem treure i posar permisos a qualsevol grup o a tothom directament amb l’usuari.
-
-## Accés a recursos del servidor
-
-Instal·lem el paquet:
-
-```bash
-smb
-```
-
-Anem a l’explorador d’arxius i busquem el directori del servidor a la pestanya **Otras Ubicaciones**.
-
-Si la configuració i la instal·lació s’han fet correctament, el directori del servidor apareixerà. Tot i això, com que no tenim permisos d’administrador del servidor, no podrem accedir a totes les carpetes, però sí a algunes.
+Comprovem la IP de l’adaptador 0 del servidor
 
 ---
 
-**I amb això finalitza la pràctica.**
+![image3](IMG/3.png)
 
+Assignem en IPv4 de la màquina Zorin el DNS del servidor, apliquem els canvis i continuem
+
+---
+
+![image4](IMG/4.png)
+
+Comprovem fent ping tant al servidor com al domini que funciona correctament la conexió  
+
+---
+
+![image5](IMG/5.png)
+
+Instal·lem els paquets de active directory per a zorin
+
+---
+
+![image6](IMG/6.png)
+
+Canviem el nom del Hostname en la màquina i li posem el domini del servidor
+
+---
+
+![image7](IMG/7.png)
+
+Amb la comanda “realm discover” comprovem que la màquina troba correctament el domini i fa la connexió amb el servidor. Seguidament, amb la comanda “join”, unirem el dospositiu al domini, i si ens deixa continuar sense problemes vol dir que ens hem unit al domini correctament   
+
+---
+
+![image8](IMG/8.png) 
+
+Com podem veure, només completar aquests passos, en la carpeta de AD “Computers” ja ens apareix el nou dispositiu
+
+---
+
+![image9](IMG/9.png)  
+
+Afegim la configuració perque quan un usuari del Active Directory es connecti al client Zorin per primer cop es definiexi a la carpeta personal  
+
+---
+
+![image10](IMG/10.png)
+
+Seguidament iniciem sessió amb l’usuari que hem creat dins de la carpeta de linux
+
+---
+
+![image11](IMG/11.png)
+
+En posar la contrasenya de l’usuari ja ens sortirà el missatge de “creando directorio /home/…” I es crearà la carpeta personal de l’usuari directament gràcies a la configuració previa que li hem assignat
+
+---
+
+![image12](IMG/12.png)
+
+Si posem “id” podrem veure que l’usuari pertany al domini  
+
+---
+
+![image13](IMG/13.png)
+
+Tornem a iniicar sessió amb l’usuari administrador de la màquina i creem el fitxer del sudoers. Afegim en aquest fitxer el grup dels usuaris que estiguin dins del grup de linux en el domini
+
+---
+
+![image14](IMG/14.png)
+
+Ara, en tornar a iniciar sessió, podrem comprovar que l’usuari es converteix en administrador i podem executar amb exit la comanda “sudo su”
+
+![image15](IMG/15.png)
+
+Podem treure i posar permisis a qualsevol grup oa  tothom directament amb l’usuari  
+
+---
+
+![image16](IMG/16.png)
+
+Instal·lem el paquet de “smb”
+
+---
+
+![image17](IMG/17.png)
+
+Anem al explorador d’arxius i busquem el directori del servidor en la pestanya de “Otras Ubicaciones”  
+
+---
+
+![image18](IMG/18.png)
+
+Si hem fet la configuració i la instal·lació bé ens hauria de srtir correctament el directori del servidor, pero com que no tenim permisos d’administrador dels servidor no podrem entrar en totes les carpetes, pero si que podrem accedir a algunes d’elles
+
+I amb aixo Finalitza la pràctica
