@@ -1,6 +1,5 @@
 # Exploració de Xarxes
-
-**Autor:** eduard.gordo@mataro.epiaedu.cat
+## SMX 2A | Edu Gordo Cebrià
 
 ## Activitats
 - Utilitzeu un Kali Linux (Live o VM en mode pont).
