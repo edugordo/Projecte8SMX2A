@@ -48,6 +48,6 @@ Analitzem els equips de la xarxa fent un escaneig amb nmap per identificar quins
 
 ## 6️⃣ Nmap al router (gateway)
 
-![Imatge](IMG/8.png)
+![Imatge](IMG/9.png)
 
-Hem intentat escanejar el router amb Nmap utilitzant l’opció -A, però el dispositiu no respon a l’exploració. Això indica que el router bloqueja escanejos de xarxa, això pot ser degut a motius de seguretat o tallafocs, i per aquest motiu no s’han pogut identificar serveis ni ports oberts.
+Escanejem el router i el resultat ens mostra que està actiu per té tots els port tancats. El dispositiu bloqueja els port escanejats mitjançant un tallafocs o altres mecanismes de seguretat
