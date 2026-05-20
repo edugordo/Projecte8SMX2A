@@ -66,10 +66,3 @@
 
 ---
 
-
-![Imatge19](19.png)
-![Imatge20](20.png)
-![Imatge21](21.png)
-![Imatge22](22.png)
-
----
