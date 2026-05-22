@@ -286,5 +286,3 @@ Aquest Pla de Sostenibilitat permet que l’aula TIC d’Horitzons Digitals sigu
 - Més sostenible ambientalment
 - Més responsable amb els residus electrònics
 - Més preparada per al futur
-
-Les mesures proposades són realistes, aplicables i compatibles amb el funcionament normal de l’aula, mantenint un bon rendiment dels equips i millorant la gestió tecnològica global del projecte.
