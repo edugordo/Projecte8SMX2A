@@ -1,12 +1,12 @@
-| ![][image1]FULL DE PRESENTACIÓ D’ACTIVITAT  | IMO30FP06 REV 00 11/15 |
+| FULL DE PRESENTACIÓ D’ACTIVITAT  | IMO30FP06 REV 00 11/15 |
 | :---- | :---- |
 
-| Curs:  | CFGM SMX 2A | ![][image2] |
-| :---- | :---- | :---: |
-| Matèria:  | 0227 Serveis de Xarxa |  |
-| Tema  | RA7. Desplegament de xarxes sense fils |  |
-| Professor/s:  | C. Alonso, B. Redondo |  |
-| Alumne: | Edu Gordo Cebrià |  |
+| Curs:  | CFGM SMX 2A |  
+| :---- | :---- |
+| Matèria:  | 0227 Serveis de Xarxa |  
+| Tema  | RA7. Desplegament de xarxes sense fils |  
+| Professor/s:  | C. Alonso, B. Redondo |  
+| Alumne: | Edu Gordo Cebrià |  
 
 **Desplegament de Xarxa Wi-Fi 7 per a "Nova Imatge" Introducció** 
 
