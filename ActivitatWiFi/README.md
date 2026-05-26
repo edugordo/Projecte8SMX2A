@@ -43,7 +43,7 @@ Heu d’accedir al simulador d’interfície web i documentar les següents conf
 
 • Seguretat: WPA3 
 
-![][image3]
+![][image1]
 
 Amb la configuració del canal en mode automàtic i l’amplada de canal permet que el punt d’accés seleccioni únicament canals autoritzats per la UE, garantint el compliment de la normativa Europea
 
@@ -55,7 +55,7 @@ Amb la configuració del canal en mode automàtic i l’amplada de canal permet 
 
 • Seguretat: WPA3 
 
-![][image4]
+![][image2]
 
 **Configuració de Xarxa Corporativa. Opció 3: MLO** 
 
@@ -63,7 +63,7 @@ Amb la configuració del canal en mode automàtic i l’amplada de canal permet 
 
 • Mode funcionamet: MLO amb 5 i 6 GHZ. • Seguretat: WPA3 
 
-![][image5]
+![][image3]
 
 Què caldria habilitar per poder operar amb les tres  bandes? 
 
@@ -75,7 +75,9 @@ Per poder operar amb les tres bandes, cal habilitar l’opció de **Multi‑Link
 
 • Banda activa: Només 2.4 GHz per assegurar compatibilitat amb dispositius antics. • Seguretat: WPA2-PSK. 
 
-• Habilitar l'aïllament de clients (Guest Network). Què aporta aquesta conf![][image6]
+• Habilitar l'aïllament de clients (Guest Network). Què aporta aquesta conf
+
+![][image4]
 
 Aquesta configuració permet l’aïllament de clients en la xarxa de convidats, impedeix la comunicació entre els dispositius connectats i evita l’accés a la xarxa corporativa interna, millorant la seguretat, la privadesa i el control de la infraestructura de la xarxa.
 
