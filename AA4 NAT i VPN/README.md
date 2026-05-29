@@ -5,19 +5,19 @@
 
 ![imatge1](IMG/1.png)
 
-info
+Configuració de xarxa del servidor IPFire
 
 ---
 
 ![imatge2](IMG/2.png)
 
-info
+Configuració de xarxa de Zorin
 
 ---
 
 ![imatge3](IMG/3.png)
 
-info
+Configuració de xarxa de client Windows 11
 
 ---
 
